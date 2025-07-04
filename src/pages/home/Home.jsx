@@ -1,10 +1,9 @@
-import { Title } from "./styles"
-import { Head } from "./styles"
+import { Showcase, Title, TopBar, BottomBar } from "./HomeStyles"
 
 export default function Home(){
     return (
         <div>
-           <Head>
+           <TopBar>
 
             <Title>Mirai base</Title>
 
@@ -12,7 +11,17 @@ export default function Home(){
                 <input type="text" placeholder="search..."/>
             </form>
 
-           </Head>
+           </TopBar>
+
+           <Showcase>
+
+            <h4>vitrine</h4>
+
+           </Showcase>
+
+           <BottomBar>
+            <h4>Referencias</h4>
+           </BottomBar>
         </div>
     )
 }
