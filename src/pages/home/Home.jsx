@@ -1,4 +1,4 @@
-import { Showcase, Title, TopBar, BottomBar } from "./HomeStyles"
+import { Showcase, Title, TopBar, BottomBar, GamePath } from "./HomeStyles"
 
 export default function Home(){
     return (
@@ -15,7 +15,11 @@ export default function Home(){
 
            <Showcase>
 
-            <h4>vitrine</h4>
+            <GamePath></GamePath>
+            <GamePath></GamePath>
+            <GamePath></GamePath>
+            <GamePath></GamePath>
+            <GamePath></GamePath>
 
            </Showcase>
 
