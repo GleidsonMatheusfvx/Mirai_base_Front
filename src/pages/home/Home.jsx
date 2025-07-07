@@ -1,8 +1,9 @@
-import { Showcase, Title, TopBar, BottomBar, GamePath } from "./HomeStyles"
+import { Title, GamePath, DivH } from "./HomeStyles"
+import { TopBar, Showcase, BottomBar } from "../../styles/globalStyles"
 
 export default function Home(){
     return (
-        <div>
+        <DivH>
            <TopBar>
 
             <Title>Mirai base</Title>
@@ -13,9 +14,14 @@ export default function Home(){
 
            </TopBar>
 
-           <Showcase>
+           <Showcase displayh="flex" flowh="row wrap" contenth="space-around">
 
-            <GamePath></GamePath>
+            <GamePath>
+                <ul>
+                    {/*<li><Image src="" alt=""/></li>*/}
+                    <li>Jogo da velha</li>
+                </ul>
+            </GamePath>
             <GamePath></GamePath>
             <GamePath></GamePath>
             <GamePath></GamePath>
@@ -26,6 +32,6 @@ export default function Home(){
            <BottomBar>
             <h4>Referencias</h4>
            </BottomBar>
-        </div>
+        </DivH>
     )
 }
