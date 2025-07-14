@@ -1,5 +1,6 @@
-import { Title, GamePath, DivH } from "./HomeStyles"
-import { TopBar, Showcase, BottomBar } from "../../styles/globalStyles"
+import {GamePath, DivH } from "./HomeStyles"
+import { TopBar, Showcase, BottomBar, Title } from "../../styles/globalStyles"
+import Search from "../../components/forms/Forms"
 
 export default function Home(){
     return (
@@ -8,19 +9,19 @@ export default function Home(){
 
             <Title>Mirai base</Title>
 
-            <form>
-                <input type="text" placeholder="search..."/>
-            </form>
+            <Search/>
 
            </TopBar>
 
-           <Showcase displayh="flex" flowh="row wrap" contenth="space-around">
+           <Showcase flowh="row wrap" contenth="space-around">
 
             <GamePath>
-                <ul>
+                <a >
+                    <ul>
                     {/*<li><Image src="" alt=""/></li>*/}
                     <li>Jogo da velha</li>
                 </ul>
+                </a>
             </GamePath>
             <GamePath></GamePath>
             <GamePath></GamePath>

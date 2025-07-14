@@ -6,10 +6,6 @@ ul{
     font-size: 20px;
 }
 `
-export const Title = styled.h1`
-color: blue;
-padding: auto;
-`
 export const GamePath = styled.div`
 background-color: red;
 display: flex;

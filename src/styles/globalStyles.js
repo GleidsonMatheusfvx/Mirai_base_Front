@@ -29,9 +29,10 @@ background-color: white;
 border-radius: 20px;
 margin: 10px;
 min-height: 580px;
-display: ${props => props.displayh || "block"};
+display: flex;
 flex-flow: ${props => props.flowh || "column nowrap"};
 justify-content: ${props => props.contenth || "center"};
+align-items: center;
 `
 
 export const BottomBar = styled.footer`
@@ -39,4 +40,8 @@ background-color: white;
 border-radius: 20px;
 margin-top: 15px;
 margin-bottom: 5px;
+`
+export const Title = styled.h1`
+color: blue;
+padding: auto;
 `
