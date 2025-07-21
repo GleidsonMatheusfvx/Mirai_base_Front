@@ -1,14 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { GlobalStyles } from './styles/globalStyles'
-import Home from './pages/home/Home'
-import Games from './pages/games/Games'
+import { RouterProvider } from 'react-router'
+import Router from './routers/Routers'
+
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/*<Home/>*/}
-    <Games/>
+    <RouterProvider router={Router}/>
     <GlobalStyles/>
   </StrictMode>,
 )
