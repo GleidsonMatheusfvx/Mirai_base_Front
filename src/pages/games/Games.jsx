@@ -2,7 +2,7 @@ import Search from "../../components/forms/Forms";
 import { TopBar, Showcase, BottomBar, Title } from "../../styles/globalStyles";
 import { DivG, GameScreen } from "./GamesStyles";
 
-export default function Games(){
+export default function Game(){
     return(
         <DivG>
             <TopBar>

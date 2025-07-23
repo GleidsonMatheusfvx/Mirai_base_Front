@@ -1,6 +1,7 @@
 import {GamePath, DivH } from "./HomeStyles"
 import { TopBar, Showcase, BottomBar, Title } from "../../styles/globalStyles"
 import Search from "../../components/forms/Forms"
+import { Link } from "react-router"
 
 export default function Home(){
     return (
@@ -16,12 +17,12 @@ export default function Home(){
            <Showcase flowh="row wrap" contenth="space-around">
 
             <GamePath>
-                <a >
+                <Link to="/Game"><a >
                     <ul>
                     {/*<li><Image src="" alt=""/></li>*/}
                     <li>Jogo da velha</li>
                 </ul>
-                </a>
+                </a></Link>
             </GamePath>
             <GamePath></GamePath>
             <GamePath></GamePath>
