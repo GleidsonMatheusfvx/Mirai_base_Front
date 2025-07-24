@@ -1,17 +1,17 @@
-import Search from "../../components/forms/Forms";
-import { TopBar, Showcase, BottomBar, Title } from "../../styles/globalStyles";
+import MultiF from "../../components/forms/Forms";
+import {Showcase, BottomBar, Title } from "../../styles/globalStyles";
 import { DivG, GameScreen } from "./GamesStyles";
 
 export default function Game(){
     return(
         <DivG>
-            <TopBar>
+            <div class="topBar">
                 
             <Title>Mirai base</Title>
 
-            <Search/>
+            <MultiF/>
 
-            </TopBar>
+            </div>
             <Showcase displayh="flex" contenth="center">
                 <GameScreen></GameScreen>
             </Showcase>

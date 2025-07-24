@@ -1,28 +1,29 @@
-import {GamePath, DivH } from "./HomeStyles"
-import { TopBar, Showcase, BottomBar, Title } from "../../styles/globalStyles"
-import Search from "../../components/forms/Forms"
-import { Link } from "react-router"
+import {GamePath, DivH, NavL} from "./HomeStyles"
+import { Showcase, BottomBar, Title } from "../../styles/globalStyles"
+import MultiF from "../../components/forms/Forms"
+
 
 export default function Home(){
     return (
         <DivH>
-           <TopBar>
+           <div class="topBar">
 
             <Title>Mirai base</Title>
 
-            <Search/>
+            <MultiF/>
 
-           </TopBar>
+           </div>
 
            <Showcase flowh="row wrap" contenth="space-around">
 
             <GamePath>
-                <Link to="/Game"><a >
+              <nav>
+                  <NavL to="/Game"className={({ isActive }) => (isActive ? "active" : "")}>
                     <ul>
-                    {/*<li><Image src="" alt=""/></li>*/}
-                    <li>Jogo da velha</li>
-                </ul>
-                </a></Link>
+                      <li>Jogo da velha</li>
+                    </ul>
+                  </NavL>
+             </nav>
             </GamePath>
             <GamePath></GamePath>
             <GamePath></GamePath>

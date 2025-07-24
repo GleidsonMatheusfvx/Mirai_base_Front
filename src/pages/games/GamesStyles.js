@@ -8,7 +8,7 @@ ul{
 `
 export const GameScreen =styled.div`
 height: 600px;
-width: 1500px;
+width: 90%;
 margin-top: 10px;
 margin-bottom: 10px;
 background-color: red;

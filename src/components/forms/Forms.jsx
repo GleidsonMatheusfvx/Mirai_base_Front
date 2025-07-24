@@ -1,7 +1,13 @@
-export default function Search(){
+import Logout from "../buttons/Buttons";
+import { InputS } from "./FormsStyles";
+
+
+export default function MultiF(){
     return(
         <form>
-           <input type="text" placeholder="search..."/>
+           <InputS type="text" placeholder="search..."/>
+
+           <Logout/>
         </form>
     )
 }
